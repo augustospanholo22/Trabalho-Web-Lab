@@ -1,2 +1,0 @@
-# Trabalho-Web-Lab
-Portifólio
