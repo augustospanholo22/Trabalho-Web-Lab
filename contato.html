@@ -23,53 +23,43 @@
 
     <main class="main_contato">
         <form>
-            <fieldset>
-                <label for="nome">Nome:</label>
-                <input type="text" placeholder="Digite seu nome:" required>
+            <label for="nome" class="nome">Nome:</label>
+            <input type="text" placeholder="Digite seu nome:" required id="nome">
 
-                <label for="sobrenome">Sobrenome:</label>
-                <input type="text" placeholder="Digite seu sobrenome:" required><br><br>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" placeholder="Digite seu sobrenome:" required><br><br>
 
-                <label for="email">Email:</label>
-                <input type="email" placeholder="Digite seu email:" required><br><br>
+            <label for="email" class="email">Email:</label>
+            <input type="email" placeholder="Digite seu email:" required><br><br>
 
-                <label for="ddd">DDD:</label>
-                <input type="text" placeholder="DDD:" required maxlength="3" style="width: 50px;">
+            <label for="ddd" class="ddd">DDD:</label>
+            <input type="text" placeholder="DDD:" required maxlength="3" style="width: 50px;" id="ddd">
 
-                <label for="fone">Telefone:</label>
-                <input type="text" placeholder="Número de telefone:" required maxlength="9"><br><br>
+            <label for="fone" class="telefone">Telefone:</label>
+            <input type="text" placeholder="Número de telefone:" required maxlength="9" id="telefone"><br><br>
 
-                <label for="mensagem">Mensagem:</label>
-                <textarea class="mensagem" placeholder="Digite aqui sua mensagem" maxlength="200"></textarea><br><br>
-            </fieldset>
-    </main>        
-    <footer>
-        <div class="varificacao">
-            <p>Verificacão:</p>
-            <p>Você leu e concorda com os ternos do site?</p>
-            <label for="sim">Sim:</label>
-            <input type="radio"><br>
+            <label for="mensagem" class="mensagem">Mensagem:</label>
+            <textarea class="mensagem" placeholder="Digite aqui sua mensagem" maxlength="200"></textarea><br><br>      
+  
+            <div class="verificacao">
+                <p>Verificacão:</p>
+                <p>Você leu e concorda com os ternos do site?</p>
+                <label for="sim">Sim:</label>
+                <input type="radio"><br>
 
-            <label for="nao">Não:</label>
-            <input type="radio"><br>
+                <label for="nao">Não:</label>
+                <input type="radio"><br>
 
-            <label for="enviar"></label>
-            <input type="submit" required>
-        </div>
-    </footer>
+                <label for="enviar"></label>
+            </div> 
+            <input type="submit" required class="botao">
         </form>
+    </main>
 
+    
 
+        
+        
 
-
-
-
-
-
-
-
-
-
-   
 </body>
 </html>
