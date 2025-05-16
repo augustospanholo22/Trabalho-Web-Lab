@@ -15,51 +15,38 @@
             </a>
         </div>
     </header>
-    <nav class="nav_principal">
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
-        <a href="conteudo.html">Conteúdo</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a class="ativo" href="contato.html">Contato</a></li>
+            <li><a href="conteudo.html">Conteúdo</a></li>
+        </ul>
     </nav>
+    <div class="contato">
+        <main>
+            <h2 class="titulo_main">Entre em Contato</h2>
+            <form class="form_contato">
 
-    <main class="main_contato">
-        <form>
-            <label for="nome" class="nome">Nome:</label>
-            <input type="text" placeholder="Digite seu nome:" required id="nome">
-
-            <label for="sobrenome">Sobrenome:</label>
-            <input type="text" placeholder="Digite seu sobrenome:" required><br><br>
-
-            <label for="email" class="email">Email:</label>
-            <input type="email" placeholder="Digite seu email:" required><br><br>
-
-            <label for="ddd" class="ddd">DDD:</label>
-            <input type="text" placeholder="DDD:" required maxlength="3" style="width: 50px;" id="ddd">
-
-            <label for="fone" class="telefone">Telefone:</label>
-            <input type="text" placeholder="Número de telefone:" required maxlength="9" id="telefone"><br><br>
-
-            <label for="mensagem" class="mensagem">Mensagem:</label>
-            <textarea class="mensagem" placeholder="Digite aqui sua mensagem" maxlength="200"></textarea><br><br>      
-  
-            <div class="verificacao">
-                <p>Verificacão:</p>
-                <p>Você leu e concorda com os ternos do site?</p>
-                <label for="sim">Sim:</label>
-                <input type="radio"><br>
-
-                <label for="nao">Não:</label>
-                <input type="radio"><br>
-
-                <label for="enviar"></label>
-            </div> 
-            <input type="submit" required class="botao">
-        </form>
-    </main>
-
-    
-
-        
-        
-
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" required>
+            
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" required>
+            
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="5" required></textarea>
+            
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+    </div>
+    <footer class="footer_principal">
+        <h3 class="redes">Redes sociais</h3>
+        <p>📸 Instagram: <a href="https://www.instagram.com/augusto_spanholo/" target="_blank" style="color: white; text-decoration: none;">@augusto_spanholo</a></p>
+        <p>📧 Email: 208891@upf.br</p>
+        <p>💻 GitHub: <a href="https://github.com/augustospanholo22" target="_blank" style="color: white; text-decoration: none;">Augustospanholo22</a></p><br>
+        <p>&copy; 2025 Augusto Spanholo De Abreu. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

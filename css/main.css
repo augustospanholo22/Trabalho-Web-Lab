@@ -2,6 +2,7 @@
 * {
     margin: 0;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
 }
 
 .header_principal {
@@ -11,20 +12,45 @@
     padding: 18px;
 
 }
-.nav_principal {
-    position: sticky;
-    top: 0;
-    background-color:darkblue;
-    text-align: center;
-    font-family:sans-serif;
-    padding: 10px;
+
+nav {
+    position:sticky;
+    top: 0px;
 }
-.nav_principal > a {
+  
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #1f1b1b;
+    
+}
+li {
+    float: left;
+}
+li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+li a:hover:not(.ativo) {
+    background-color: #373c72;
+}
+li a.ativo {
+    color: white;
+    background-color: grey ;
 }
 
+
 .main_principal {
-    background-color: beige;
+    background-color: lightgrey;
     padding:20px;
     font-size: large;
     line-height: 1.5;
@@ -57,9 +83,10 @@
 
 .footer_principal{
     color: white;
-    background-color:darkblue;
+    background-color:#1f1b1b;
     text-align: center;
     margin: 0px;
+    padding: 15px;
     font-size: large;
     
 }
@@ -68,95 +95,55 @@
     font-size: 30px;
 }
 
-.main_contato {
+
+.contato{
+    background-color: lightgrey;
+    height: 650px;
+}
+
+
+.form_contato {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 50px;
+    background-color: #3b3686;
+    border-radius: 8px;
     color: white;
-    background-color: rgb(43, 41, 41); 
+  }
+  
+  .form_contato label {
+    display: flex;
+    margin-bottom: 8px;
     font-weight: bold;
-    font-style: oblique;
-    text-align: center;
-    padding: 20px;
-}
-input[type="text"] {
-    padding: 10px 15px;
-    border: 2px solid blue; 
+  }
+  
+  .form_contato input[type="text"],
+  .form_contato input[type="email"],
+  .form_contato textarea {
+    width: 473px;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: none;
     border-radius: 8px;
     font-size: 16px;
-    transition: 0.5s;
-    width: 200px;
-
-}
-
-input[type="text"]:focus {
-    border-color: #FFD700;  
-    box-shadow: 0 0 8px #FFD700;
-}
-input[type="email"] {
-    position: relative;
-    right: 140px;
-    padding: 10px 15px;
-    border: 2px solid blue; 
-    border-radius: 8px;
-    font-size: 16px;
-    transition: 0.5s;
-    width: 250px;
-}
-input[type="email"]:focus {
-    border-color: #FFD700;  
-    box-shadow: 0 0 8px #FFD700;
-}
-textarea{
-    padding: 10px 15px;
-    border: 2px solid blue; 
-    border-radius: 8px;
-    font-size: 16px;
-    transition: 0.5s;
-    width: 350px;
-    height: 100px;
-    resize: none ;
-}
-textarea:focus {
-    border-color: #FFD700;  
-    box-shadow: 0 0 8px #FFD700;
-}
-
-.email {
-    position: relative;
-    right: 142px;
-}
-.ddd {
-    position: relative;
-    right: 83px;
-}
-#ddd {
-    position: relative;
-    right: 80px;
-}
-.telefone {
-    position: relative;
-    right: 75px;
-}
-#telefone {
-    position: relative;
-    right: 75px;
-}
-.mensagem {
-    position: relative;
-    right: 100px;
-    vertical-align: top;
-}
-.verificacao {
-    color: black;
-    background-color: lightgrey ;
-    text-align: center;
-}
-.botao {
-    position: relative;
-    top:  15px;
-    left: 730px;
+  }
+  
+  .form_contato textarea {
+    resize: none;
+  }
+  
+  .form_contato button {
+    background-color: grey;
     color: white;
-    background-color: darkblue;
-    border-color:rgb(0, 0, 0);
-    font-size:16px;
-}
-
-
+    border: none;
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .form_contato button:hover {
+    background-color: rgb(94, 94, 94);
+  }
+  
