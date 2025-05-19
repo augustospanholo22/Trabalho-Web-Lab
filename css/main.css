@@ -54,6 +54,7 @@ nav {
     padding:20px;
     font-size: large;
     line-height: 1.5;
+    height: 600px;
 }
 .main_principal > p {
     position: relative;
@@ -88,7 +89,7 @@ nav {
     margin: 0px;
     padding: 15px;
     font-size: large;
-    
+    height: 200px;
 }
 .redes {
     font-family: 'Bebas Neue', sans-serif;
@@ -163,6 +164,7 @@ article {
 
 article > h2 {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
 }
 
 article > p {
@@ -210,23 +212,62 @@ article > p {
     margin: 10px;
     width: 250px;
     border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
   
 }
-.card > h3 {
+.card > .Habilidades {
     position: relative;
-    right: 34px;
+    left: 55px;
     bottom: 40px;
     font-size: 20px;
     margin-bottom: 10px;
-
-    
 }
 
-.card > p {
-    margin: 5px 0;
+.card > .educacao {
     position: relative;
     right: 30px;
-    bottom: 20px;
-    
+    bottom: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card > .elementos {
+    display: flex;
+    margin: 5px 0;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+    right: 0px;
+    top: 60px;
+    gap: 80px;
+}
+.card > .faculdade {
+    position: relative;
+    right: 100px;
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    font-style: italic;
+
+}
+
+.python {
+    width: 50px;
+    position: relative;
+    right: 170px;
+    top: 20px;
+
+}
+
+.html {
+    height: 50px;
+    width: 90px;
+    position: relative;
+    right: 117px;
+    top: 20px;
 }
   
