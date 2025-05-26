@@ -270,4 +270,30 @@ article > p {
     right: 117px;
     top: 20px;
 }
-  
+
+#repositorio {
+    position: relative;
+    left: 650px;
+    background-color: #000000;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+
+#repositorio:hover {
+    background-color:#4b4b4b;
+}
+
+.repositorio {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
